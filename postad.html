@@ -1,0 +1,58 @@
+<html>
+       <head>
+        
+       
+                     
+       
+           
+           
+           <title>Post AD</title>
+    </head>
+  <body>
+      
+      <form method="POST" action="postad.php">
+          
+     <table>
+    <tr>
+    <td>AdName:</td>
+    <td><input type="text" name="adname"></td>
+     </tr>
+     <tr>
+    <td>AdCategory</td>
+         <td>
+            <select name="categories">
+             <?php include 'getcategories.php'; 
+             echo '<option value="'.$categoryname.'">'.$categoryname.'</option>';
+             ?>
+</select>";
+          
+             
+        
+    
+  </td>
+     </tr>
+     <tr>
+    <td>Contact Number</td>
+    <td><input type="text" name="contactnumber"></td>
+     </tr>
+     <tr>
+    <td>Image</td>
+    <td><input type="text" name="image"></td>
+     </tr>
+     <tr>
+    <td>Description</td>
+    <td><input type="text" name="description"></td>
+     </tr>
+        <tr>
+    <td>Expiration Date</td>
+    <td><input type="text" name="expirationdate"></td>
+     </tr>
+     <tr>
+     <td id="btn"><input type="submit" value='submit' name="submit"></td>
+    </tr>    
+    </table>
+        
+    
+    </form>
+      </body>
+</html>
