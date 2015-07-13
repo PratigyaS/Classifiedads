@@ -203,9 +203,7 @@ if (file_exists($TARGET_PATH))
 
 {
 
-    // A common cause of file moving failures is because of bad permissions on the directory attempting to be written to
-
-    // Make sure you chmod the directory to be writeable
+    
 
     $_SESSION['error'] = "Could not upload file.  Check read/write persmissions on the directory";
 
